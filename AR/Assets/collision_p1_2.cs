@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class collision_p1_2 : MonoBehaviour
 {
-  void OnTriggerEnter(Collider col)
+    void OnTriggerEnter(Collider col)
     {
-        SceneManager.LoadScene("Main");
+        //SceneManager.LoadScene("Main");
 
-        if (col.GetComponent<Collider>().name == "puzzle_p2_1")
-        {
-            SceneManager.LoadScene("Main");
-        }
+        //if (col.GetComponent<Collider>().name == "puzzle_p2_1")
+        //{
+        //    SceneManager.LoadScene("Main");
+
+        Debug.Log("Trigger");
     }
+    
 }
