@@ -7,21 +7,6 @@ using UnityEngine.SceneManagement;
 public class collision_p1_2 : MonoBehaviour
 {
     bool snapped = false;
-    public static collision_p1_2 instance;
-
-
-
-    public void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != null)
-        {
-            Destroy(this);
-        }
-    }
 
     public bool IsSnapped() { return snapped; }
 
