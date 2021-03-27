@@ -1,22 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class collision_p1_2 : MonoBehaviour
 {
     bool snapped = false;
-    GameObject snapparent; // the gameobject this transform will be snapped to
-    Vector3 offset; // the offset of this object's position from the parent
+    public static collision_p1_2 instance;
 
-    void Update()
+
+
+    public void Awake()
     {
-        if (snapped == true)
+        if (instance == null)
         {
-            //retain this objects position in relation to the parent
-            transform.position = this.transform.position + offset;
+            instance = this;
+        }
+        else if (instance != null)
+        {
+            Destroy(this);
         }
     }
+
+    public bool IsSnapped() { return snapped; }
 
     void OnTriggerEnter(Collider col)
     {
@@ -26,9 +33,6 @@ public class collision_p1_2 : MonoBehaviour
             //SceneManager.LoadScene("Main");
 
             snapped = true;
-            snapparent = col.gameObject;
-            offset = transform.position - snapparent.transform.position; //store relation to parent
-
         }
     }
 }
