@@ -12,12 +12,13 @@ public class collision_p1_2 : MonoBehaviour
     {
         if (col.gameObject.name == "P_1_2_Collision")
         {
-            //If the GameObject's name matches the one you suggest, output this message in the console
-            //SceneManager.LoadScene("Main");
-
             snapped = true;
         }
-        else
+    }
+
+    void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.name == "P_1_2_Collision")
         {
             snapped = false;
         }
