@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class PUZZLE : MonoBehaviour
 {
 
-    public GameObject puzzle_1_2;
-
     void Update()
     {
-        if(puzzle_1_2.GetComponent<collision_p1_2>().IsSnapped() == true)
+        Debug.Log(collision_p1_2.snapped);
+
+        if(collision_p1_2.snapped == true && collision_p1_3.snapped == true)
             SceneManager.LoadScene("Main");
             //Debug.Log("Trigger");
 
