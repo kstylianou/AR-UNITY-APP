@@ -5,7 +5,7 @@ using UnityEngine;
 public class MyDefaultTrackableEventHandler : DefaultTrackableEventHandler
 {
 
-    public static int countNum = 0;
+    public static int countNum = 4;
 
     protected override void OnTrackingFound()
     {
