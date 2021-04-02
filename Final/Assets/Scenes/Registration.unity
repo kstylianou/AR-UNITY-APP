@@ -381,18 +381,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 28
     m_FontStyle: 2
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
+    m_MinSize: 2
+    m_MaxSize: 298
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter your email
+  m_Text: ENTER YOUR EMAIL
 --- !u!222 &326406377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -998,10 +998,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 28
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1278,7 +1278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 253, y: 21.195}
+  m_AnchoredPosition: {x: 223.70007, y: 10.885002}
   m_SizeDelta: {x: 73.96291, y: 67.3138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893662649
@@ -1507,8 +1507,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -712}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 40, y: -605}
+  m_SizeDelta: {x: 489.53394, y: 76.71515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &955903610
 MonoBehaviour:
@@ -2206,8 +2206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.000015258789, y: 28}
-  m_SizeDelta: {x: 117.877045, y: 30}
+  m_AnchoredPosition: {x: -0.000049591, y: 104}
+  m_SizeDelta: {x: 222.40302, y: 63.52716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317307416
 MonoBehaviour:
@@ -2594,7 +2594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 101.6, y: -85}
+  m_AnchoredPosition: {x: 223.70007, y: -91.31}
   m_SizeDelta: {x: 73.96291, y: 67.3138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1420141566
@@ -2749,7 +2749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 69.3, y: -405.9}
+  m_AnchoredPosition: {x: 40.000076, y: -416.21}
   m_SizeDelta: {x: 489.53394, y: 76.71515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491785780
@@ -3109,8 +3109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000012159, y: -682}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 40.000076, y: -509}
+  m_SizeDelta: {x: 489.53394, y: 76.71515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677626538
 MonoBehaviour:
@@ -3544,18 +3544,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 28
     m_FontStyle: 2
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Password
+  m_Text: PASSWORD
 --- !u!222 &1915711270
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3598,7 +3598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 101.600006, y: -187.40001}
+  m_AnchoredPosition: {x: 223.70007, y: -187.31}
   m_SizeDelta: {x: 73.96291, y: 67.3138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974146024
