@@ -14,6 +14,11 @@ public class PUZZLE : MonoBehaviour
     public Text timeText;
     public static int puzzle;
 
+
+    public bool isRunning = false;
+
+    public Material[] material;
+
     private bool startGame = false;
     private bool startCountdown = false;
     private float timeRemaining = 4;
@@ -24,7 +29,12 @@ public class PUZZLE : MonoBehaviour
     private bool puzzle_3_4 = false;
 
 
-    private GameObject puzzle1;
+    [Header("Puzzle Pieces")]
+    public GameObject puzzle1;
+    public GameObject puzzle2;
+    public GameObject puzzle3;
+    public GameObject puzzle4;
+
 
 
     public void SetPuzzle(int i)
@@ -35,10 +45,22 @@ public class PUZZLE : MonoBehaviour
 
     void Start()
     {
-        if(puzzle == 1)
+
+        Debug.Log(puzzle);
+        if(puzzle == 2 && isRunning)
         {
-            puzzle1 = GameObject.Find("puzzle-1");
-            puzzle1.renderer.material = P_5;
+            puzzle1.GetComponent<Renderer>().material = material[0];
+            puzzle2.GetComponent<Renderer>().material = material[1];
+            puzzle3.GetComponent<Renderer>().material = material[2];
+            puzzle4.GetComponent<Renderer>().material = material[3];
+        }
+
+        if(puzzle == 3 && isRunning)
+        {
+            puzzle1.GetComponent<Renderer>().material = material[4];
+            puzzle2.GetComponent<Renderer>().material = material[5];
+            puzzle3.GetComponent<Renderer>().material = material[6];
+            puzzle4.GetComponent<Renderer>().material = material[7];
         }
         
     }

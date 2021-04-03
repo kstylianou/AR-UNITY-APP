@@ -308,6 +308,8 @@ GameObject:
   m_Component:
   - component: {fileID: 608988580}
   - component: {fileID: 608988579}
+  - component: {fileID: 608988582}
+  - component: {fileID: 608988581}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -344,6 +346,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &608988581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608988578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9050cb9f5e7d946a398b636745087b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateScene: {fileID: 1775679808}
+  sceneName: Instructions
+  previus: 
+--- !u!114 &608988582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608988578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9050cb9f5e7d946a398b636745087b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateScene: {fileID: 1547130506}
+  sceneName: Instructions
+  previus: 
 --- !u!1 &634384361
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +898,8 @@ MonoBehaviour:
   countText: {fileID: 0}
   markerHelper: {fileID: 0}
   timeText: {fileID: 0}
+  isRunning: 0
+  material: []
 --- !u!1 &1582515660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,6 +1277,8 @@ MonoBehaviour:
   countText: {fileID: 0}
   markerHelper: {fileID: 0}
   timeText: {fileID: 0}
+  isRunning: 0
+  material: []
 --- !u!1 &1871475405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,3 +1425,5 @@ MonoBehaviour:
   countText: {fileID: 0}
   markerHelper: {fileID: 0}
   timeText: {fileID: 0}
+  isRunning: 0
+  material: []
