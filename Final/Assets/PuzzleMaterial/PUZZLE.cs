@@ -12,7 +12,7 @@ public class PUZZLE : MonoBehaviour
 
     [Header("Countdown")]
     public Text timeText;
-
+    public static int puzzle;
 
     private bool startGame = false;
     private bool startCountdown = false;
@@ -23,6 +23,25 @@ public class PUZZLE : MonoBehaviour
     private bool puzzle_2_4 = false;
     private bool puzzle_3_4 = false;
 
+
+    private GameObject puzzle1;
+
+
+    public void SetPuzzle(int i)
+    {
+        puzzle = i;
+    }
+
+
+    void Start()
+    {
+        if(puzzle == 1)
+        {
+            puzzle1 = GameObject.Find("puzzle-1");
+            puzzle1.renderer.material = P_5;
+        }
+        
+    }
 
     void Update()
     {

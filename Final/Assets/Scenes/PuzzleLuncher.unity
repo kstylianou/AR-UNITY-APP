@@ -732,6 +732,7 @@ GameObject:
   - component: {fileID: 1547130508}
   - component: {fileID: 1547130507}
   - component: {fileID: 1547130506}
+  - component: {fileID: 1547130509}
   m_Layer: 5
   m_Name: Game2
   m_TagString: Untagged
@@ -801,7 +802,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1547130507}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1547130509}
+        m_MethodName: SetPuzzle
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1547130507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,6 +851,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547130504}
   m_CullTransparentMesh: 0
+--- !u!114 &1547130509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547130504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b657490b3da248640b927252109b0f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
+  markerHelper: {fileID: 0}
+  timeText: {fileID: 0}
 --- !u!1 &1582515660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1109,7 @@ GameObject:
   - component: {fileID: 1775679810}
   - component: {fileID: 1775679809}
   - component: {fileID: 1775679808}
+  - component: {fileID: 1775679811}
   m_Layer: 5
   m_Name: Game3
   m_TagString: Untagged
@@ -1151,7 +1179,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1775679809}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1775679811}
+        m_MethodName: SetPuzzle
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1775679809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,6 +1228,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775679806}
   m_CullTransparentMesh: 0
+--- !u!114 &1775679811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775679806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b657490b3da248640b927252109b0f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
+  markerHelper: {fileID: 0}
+  timeText: {fileID: 0}
 --- !u!1 &1871475405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1255,7 @@ GameObject:
   - component: {fileID: 1871475409}
   - component: {fileID: 1871475408}
   - component: {fileID: 1871475407}
+  - component: {fileID: 1871475410}
   m_Layer: 5
   m_Name: Game1
   m_TagString: Untagged
@@ -1270,7 +1325,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1871475408}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1871475410}
+        m_MethodName: SetPuzzle
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1871475408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1308,3 +1374,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871475405}
   m_CullTransparentMesh: 0
+--- !u!114 &1871475410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871475405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b657490b3da248640b927252109b0f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
+  markerHelper: {fileID: 0}
+  timeText: {fileID: 0}
