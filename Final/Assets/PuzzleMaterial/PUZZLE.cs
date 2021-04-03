@@ -23,6 +23,7 @@ public class PUZZLE : MonoBehaviour
     private bool puzzle_2_4 = false;
     private bool puzzle_3_4 = false;
 
+
     void Update()
     {
         if (startGame)
@@ -30,7 +31,15 @@ public class PUZZLE : MonoBehaviour
             DisplayConnectedPieces();
 
             if (collision_p1_2.snapped == true && collision_p1_3.snapped == true && collision_p2_4.snapped == true && collision_p3_4.snapped == true)
+            {
                 SceneManager.LoadScene("Main");
+                collision_p1_2.snapped = false;
+                collision_p1_3.snapped = false;
+                collision_p2_4.snapped = false;
+                collision_p3_4.snapped = false;
+                MyDefaultTrackableEventHandler.countNum = 8;
+            }
+                
         }
         else
         {

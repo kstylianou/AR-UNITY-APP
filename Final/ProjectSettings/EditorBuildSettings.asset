@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 95876f498ed7dc540add9b5c30e8b37a
+  - enabled: 1
+    path: Assets/Scenes/Shapes.unity
+    guid: c0a1e163256ce5f4aafdc944b826861a
   m_configObjects: {}
