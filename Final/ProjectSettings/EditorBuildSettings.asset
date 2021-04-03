@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Registration.unity
     guid: ea41a5d30d10e2d46820b4454e620ba6
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 274f898b4b48e5645a08dafb39125cac
+  - enabled: 1
+    path: Assets/Scenes/PuzzleLuncher.unity
+    guid: f9ab00df6973e294892cfa732c68fab1
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 8c81886e6872d704f800694274b1341e
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 95876f498ed7dc540add9b5c30e8b37a
   m_configObjects: {}
