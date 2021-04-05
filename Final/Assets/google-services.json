@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "852483888220",
+    "project_id": "std-game",
+    "storage_bucket": "std-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852483888220:android:c7c5c49088583d79b6c299",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852483888220-d2kijk9h8udoo2qefevt0ou8q85gm57n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuypAXUn-_9aV4k-ohN4hd0BHxcPdP4wY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852483888220-d2kijk9h8udoo2qefevt0ou8q85gm57n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
