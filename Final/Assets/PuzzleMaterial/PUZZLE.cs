@@ -73,7 +73,7 @@ public class PUZZLE : MonoBehaviour
 
             if (collision_p1_2.snapped == true && collision_p1_3.snapped == true && collision_p2_4.snapped == true && collision_p3_4.snapped == true)
             {
-                SceneManager.LoadScene("Main");
+                SceneManager.LoadScene("Congradulations");
                 collision_p1_2.snapped = false;
                 collision_p1_3.snapped = false;
                 collision_p2_4.snapped = false;

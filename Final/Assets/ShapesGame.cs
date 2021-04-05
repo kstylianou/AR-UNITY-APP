@@ -118,7 +118,7 @@ public class ShapesGame : MonoBehaviour
                 break;
 
             case 4: // Finish
-                SceneManager.LoadScene("Main");
+                SceneManager.LoadScene("Congradulations");
                 break;
         }
     }

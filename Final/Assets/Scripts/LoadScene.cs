@@ -11,13 +11,13 @@ public class LoadScene : MonoBehaviour
     public Button UpdateScene;
 
     public string sceneName;
-    public string previus;
+    public static string previus;
 
     public void LoadNewScene(string sceneName)
     {
-        //SceneManager.UnloadScene(previus);
+        
         SceneManager.LoadScene(sceneName);
-        Debug.Log("Clicked");
+        
     }
 
     void Start()
@@ -25,5 +25,11 @@ public class LoadScene : MonoBehaviour
         Button btn = UpdateScene.GetComponent<Button>();
 
         btn.onClick.AddListener(() => LoadNewScene(sceneName));
+    }
+
+
+    public void GamePlaying(string name)
+    {
+        previus = name;
     }
 }
