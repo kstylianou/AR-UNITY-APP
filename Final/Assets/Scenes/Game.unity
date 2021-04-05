@@ -2373,7 +2373,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Scan The Marker To Begin! '
+  m_Text: 'Scan The Target To Begin! '
 --- !u!222 &1384885202
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3395,7 +3395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Markers Found: 0/4'
+  m_Text: 'Targets Found: 0/4'
 --- !u!222 &2041240531
 CanvasRenderer:
   m_ObjectHideFlags: 0

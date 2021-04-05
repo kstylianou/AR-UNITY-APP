@@ -89,7 +89,7 @@ public class PUZZLE : MonoBehaviour
             if (MyDefaultTrackableEventHandler.countNum == 4)
             {
                 //countText.gameObject.SetActive(false);
-                markerHelper.text = "Make the puzzle malaka!";
+                markerHelper.text = "Complete the puzzle !!!";
                 if (!startGame)
                 {
                     startCountdown = true;

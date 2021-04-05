@@ -94,25 +94,25 @@ public class ShapesGame : MonoBehaviour
         switch (state)
         {
             case 0: // Triangle
-                select_text.text = "Select Triangle";
+                select_text.text = "Select the Triangle";
                 if (triangle_pressed)
                     state = 1;
                 break;
 
             case 1: // Square
-                select_text.text = "Select Square";
+                select_text.text = "Select the Square";
                 if (square_pressed)
                     state = 2;
                 break;
 
             case 2: // Circle
-                select_text.text = "Select Circle";
+                select_text.text = "Select the Circle";
                 if (circle_pressed)
                     state = 3;
                 break;
 
             case 3: // Pentagon
-                select_text.text = "Select Pentagon";
+                select_text.text = "Select the Pentagon";
                 if (pentagon_pressed)
                     state = 4;
                 break;
