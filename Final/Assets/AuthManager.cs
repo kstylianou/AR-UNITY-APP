@@ -26,6 +26,9 @@ public class AuthManager : MonoBehaviour
     public InputField passwordRegisterField;
     public Text warningRegisterText;
 
+
+    public static string GetUsername = "";
+
     void Awake()
     {
         //Check that all of the necessary dependencies for Firebase are present on the system
@@ -66,6 +69,7 @@ public class AuthManager : MonoBehaviour
 
     private IEnumerator Login(string _email, string _password)
     {
+        Debug.Log("Clicked");
         //Call the Firebase auth signin function passing the email and password
         var LoginTask = auth.SignInWithEmailAndPasswordAsync(_email, _password);
         //Wait until the task completes
@@ -105,8 +109,9 @@ public class AuthManager : MonoBehaviour
             //Now get the result
             User = LoginTask.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
-            //warningLoginText.text = "";
+            warningLoginText.text = "";
             SceneManager.LoadScene("Main");
+            GetUsername = User.DisplayName;
         }
     }
 

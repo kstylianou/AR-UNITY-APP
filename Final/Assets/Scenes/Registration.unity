@@ -2487,7 +2487,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1317307417}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1801422842}
+        m_MethodName: RegisterButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1317307417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,11 +3228,11 @@ MonoBehaviour:
   dependencyStatus: 0
   emailLoginField: {fileID: 1427565362}
   passwordLoginField: {fileID: 939505851}
-  warningLoginText: {fileID: 0}
-  usernameRegisterField: {fileID: 0}
-  emailRegisterField: {fileID: 0}
-  passwordRegisterField: {fileID: 0}
-  warningRegisterText: {fileID: 0}
+  warningLoginText: {fileID: 806223547}
+  usernameRegisterField: {fileID: 1677626538}
+  emailRegisterField: {fileID: 1491785780}
+  passwordRegisterField: {fileID: 955903610}
+  warningRegisterText: {fileID: 646798009}
 --- !u!1 &1836856714
 GameObject:
   m_ObjectHideFlags: 0

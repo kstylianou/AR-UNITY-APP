@@ -5,7 +5,7 @@ using UnityEngine;
 public class MyDefaultTrackableEventHandler : DefaultTrackableEventHandler
 {
 
-    public static int countNum = 4;
+    public static int countNum = 0;
 
     protected override void OnTrackingFound()
     {
@@ -27,22 +27,22 @@ public class MyDefaultTrackableEventHandler : DefaultTrackableEventHandler
             foreach (var component in canvasComponents)
                 component.enabled = true;
 
-            if (mTrackableBehaviour.TrackableName == "puzzle_1")
+            if (mTrackableBehaviour.TrackableName == "qr_1")
             {
                 countNum++;
             }
 
-            if (mTrackableBehaviour.TrackableName == "puzzle_2")
+            if (mTrackableBehaviour.TrackableName == "qr_2")
             {
                 countNum++;
             }
 
-            if (mTrackableBehaviour.TrackableName == "puzzle_3")
+            if (mTrackableBehaviour.TrackableName == "qr_3")
             {
                 countNum++;
             }
 
-            if (mTrackableBehaviour.TrackableName == "puzzle_4")
+            if (mTrackableBehaviour.TrackableName == "qr_4")
             {
                 countNum++;
             }

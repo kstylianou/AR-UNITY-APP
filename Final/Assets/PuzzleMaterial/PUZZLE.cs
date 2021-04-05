@@ -78,7 +78,7 @@ public class PUZZLE : MonoBehaviour
                 collision_p1_3.snapped = false;
                 collision_p2_4.snapped = false;
                 collision_p3_4.snapped = false;
-                MyDefaultTrackableEventHandler.countNum = 8;
+                MyDefaultTrackableEventHandler.countNum = 0;
             }
                 
         }
