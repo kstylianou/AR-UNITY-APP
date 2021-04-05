@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PuzzleLuncher.unity
     guid: f9ab00df6973e294892cfa732c68fab1
   - enabled: 1
-    path: Assets/Scenes/Instructions.unity
+    path: Assets/Scenes/PuzzleInstructions.unity
     guid: 8c81886e6872d704f800694274b1341e
   - enabled: 1
     path: Assets/Scenes/Game.unity
