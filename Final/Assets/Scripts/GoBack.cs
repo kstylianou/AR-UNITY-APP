@@ -1,3 +1,5 @@
+//Script for navigating to the previous scene
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,5 @@
+//Script to handle the text provided within the "Congradulations" scene 
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

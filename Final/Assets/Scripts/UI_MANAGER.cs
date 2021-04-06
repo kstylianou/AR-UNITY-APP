@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// UI Manager for the "Registration" scene
+// Toggles from Registration to Login screen or viceversa
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -14,6 +17,7 @@ public class UI_MANAGER : MonoBehaviour
     public Button RegisterButton;
     public Button LoginButton;
 
+    // Keep the class instances awake
     public void Awake()
     {
         if(instance == null)
@@ -26,18 +30,21 @@ public class UI_MANAGER : MonoBehaviour
         }
     }
 
+    // Display the login screen and deactivate registration screen
     public void LoginScreen()
     {
         loginUI.SetActive(true);
         registerUI.SetActive(false);
     }
 
+    // Display the registration screen and deactivate login screen
     public void RegisterScreen()
     {
         loginUI.SetActive(false);
         registerUI.SetActive(true);
     }
 
+    // Set Buttons and Listeners
     void Start()
     {
         Button Registerbtn = RegisterButton.GetComponent<Button>();

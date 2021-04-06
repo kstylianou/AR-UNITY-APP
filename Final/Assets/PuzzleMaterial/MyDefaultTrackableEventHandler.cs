@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Checks that all the pieces are assembled correctly and proceeds 
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

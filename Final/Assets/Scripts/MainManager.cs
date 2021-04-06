@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Script to welcome the user
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

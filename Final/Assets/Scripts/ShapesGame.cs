@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Shapes Game
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,28 +25,24 @@ public class ShapesGame : MonoBehaviour
 
     void Start()
     {
-        // Triangle
-       // vb_triangle = GameObject.Find("vb_triangle");
+        // Triangle virtual button
         vb_triangle.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(triangleButtonPressed);
         vb_triangle.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(triangleButtonReleased);
 
-        // Square
-       //vb_square = GameObject.Find("vb_square");
+        // Square virtual button
         vb_square.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(squareButtonPressed);
         vb_square.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(squareButtonReleased);
 
-        // Circle
-       // vb_circle = GameObject.Find("vb_circle");
+        // Circle virtual button
         vb_circle.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(circleButtonPressed);
         vb_circle.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(circleButtonReleased);
 
-        // Pentagon
-        //vb_pentagon = GameObject.Find("vb_pentagon");
+        // Pentagon virtual button
         vb_pentagon.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonPressed(pentagonButtonPressed);
         vb_pentagon.GetComponent<VirtualButtonBehaviour>().RegisterOnButtonReleased(pentagonButtonReleased);
     }
 
-    // Triangle
+    // Triangle listeners
     public void triangleButtonPressed(VirtualButtonBehaviour vb)
     {
         triangle_pressed = true;
@@ -55,7 +53,7 @@ public class ShapesGame : MonoBehaviour
         triangle_pressed = false;
     }
 
-    // Square
+    // Square listeners
     public void squareButtonPressed(VirtualButtonBehaviour vb)
     {
         square_pressed = true;
@@ -66,7 +64,7 @@ public class ShapesGame : MonoBehaviour
         square_pressed = false;
     }
 
-    // Circle
+    // Circle listeners
     public void circleButtonPressed(VirtualButtonBehaviour vb)
     {
         circle_pressed = true;
@@ -77,7 +75,7 @@ public class ShapesGame : MonoBehaviour
         circle_pressed = false;
     }
 
-    // Pentagon
+    // Pentagon listeners
     public void pentagonButtonPressed(VirtualButtonBehaviour vb)
     {
         pentagon_pressed = true;

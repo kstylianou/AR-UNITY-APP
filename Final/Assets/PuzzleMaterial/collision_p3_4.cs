@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Collision Detection for "piece 3" & "piece 4"
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

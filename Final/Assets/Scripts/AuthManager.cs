@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// AuthManager handles registration and login as well as Firebase errors occured.
+
+using System.Collections;
 using UnityEngine;
 using Firebase;
 using Firebase.Auth;
@@ -69,10 +71,10 @@ public class AuthManager : MonoBehaviour
 
     private IEnumerator Login(string _email, string _password)
     {
-        Debug.Log("Clicked");
+      
         //Call the Firebase auth signin function passing the email and password
         var LoginTask = auth.SignInWithEmailAndPasswordAsync(_email, _password);
-        //Wait until the task completes
+        
         yield return new WaitUntil(predicate: () => LoginTask.IsCompleted);
 
         if (LoginTask.Exception != null)
@@ -83,6 +85,7 @@ public class AuthManager : MonoBehaviour
             AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
 
             string message = "Login Failed!";
+            //Switch case to handle errors of Credentials
             switch (errorCode)
             {
                 case AuthError.MissingEmail:
@@ -106,7 +109,6 @@ public class AuthManager : MonoBehaviour
         else
         {
             //User is now logged in
-            //Now get the result
             User = LoginTask.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
@@ -126,7 +128,6 @@ public class AuthManager : MonoBehaviour
         {
             //Call the Firebase auth signin function passing the email and password
             var RegisterTask = auth.CreateUserWithEmailAndPasswordAsync(_email, _password);
-            //Wait until the task completes
             yield return new WaitUntil(predicate: () => RegisterTask.IsCompleted);
 
             if (RegisterTask.Exception != null)
@@ -137,6 +138,7 @@ public class AuthManager : MonoBehaviour
                 AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
 
                 string message = "Register Failed!";
+                //Switch case to handle errors of Credentials
                 switch (errorCode)
                 {
                     case AuthError.MissingEmail:
@@ -156,8 +158,7 @@ public class AuthManager : MonoBehaviour
             }
             else
             {
-                //User has now been created
-                //Now get the result
+                //User has now been created    
                 User = RegisterTask.Result;
 
                 if (User != null)

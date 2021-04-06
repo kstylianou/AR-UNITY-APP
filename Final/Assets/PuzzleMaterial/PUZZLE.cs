@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿// Puzzle game
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class PUZZLE : MonoBehaviour 
 {
+    //Displaying text into the "Puzzle scene"
     [Header("Markers")]
     public Text countText;
     public Text markerHelper;
@@ -46,7 +49,7 @@ public class PUZZLE : MonoBehaviour
     void Start()
     {
 
-        Debug.Log(puzzle);
+        // Changing the material of the target into the "Second puzzle"
         if(puzzle == 2 && isRunning)
         {
             puzzle1.GetComponent<Renderer>().material = material[0];
@@ -54,8 +57,8 @@ public class PUZZLE : MonoBehaviour
             puzzle3.GetComponent<Renderer>().material = material[2];
             puzzle4.GetComponent<Renderer>().material = material[3];
         }
-
-        if(puzzle == 3 && isRunning)
+        // Changing the material of the target into the "Third puzzle"
+        if (puzzle == 3 && isRunning)
         {
             puzzle1.GetComponent<Renderer>().material = material[4];
             puzzle2.GetComponent<Renderer>().material = material[5];
@@ -70,7 +73,7 @@ public class PUZZLE : MonoBehaviour
         if (startGame)
         {
             DisplayConnectedPieces();
-
+            // Checking if the pieces are placed correctly & Changing the default value of the static variables
             if (collision_p1_2.snapped == true && collision_p1_3.snapped == true && collision_p2_4.snapped == true && collision_p3_4.snapped == true)
             {
                 SceneManager.LoadScene("Congradulations");
@@ -85,7 +88,7 @@ public class PUZZLE : MonoBehaviour
         else
         {
             countText.text = "Markers Found: " + MyDefaultTrackableEventHandler.countNum + "/4";
-
+            // Checking if the all the targets were detected by the camera
             if (MyDefaultTrackableEventHandler.countNum == 4)
             {
                 //countText.gameObject.SetActive(false);
@@ -97,7 +100,7 @@ public class PUZZLE : MonoBehaviour
 
             }
 
-
+            // When all targets found , start timer
             if (startCountdown)
             {
                 if (timeRemaining > 0)
@@ -116,7 +119,7 @@ public class PUZZLE : MonoBehaviour
         
     }
 
-
+    // Display Countdown timer
     void DisplayTime(float timeToDisplay)
     {
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
@@ -128,7 +131,7 @@ public class PUZZLE : MonoBehaviour
             timeText.text = "Good Luck!";
         }
     }
-
+    // Showing how many pieces were placed correctly
     void DisplayConnectedPieces()
     {
         if (collision_p1_2.snapped == true)
