@@ -15,7 +15,7 @@ public class PUZZLE : MonoBehaviour
 
     [Header("Countdown")]
     public Text timeText;
-    public static int puzzle;
+
 
 
     public bool isRunning = false;
@@ -39,18 +39,11 @@ public class PUZZLE : MonoBehaviour
     public GameObject puzzle4;
 
 
-
-    public void SetPuzzle(int i)
-    {
-        puzzle = i;
-    }
-
-
     void Start()
     {
 
         // Changing the material of the target into the "Second puzzle"
-        if(puzzle == 2 && isRunning)
+        if(SetPuzzle.puzzle == 2 && isRunning)
         {
             puzzle1.GetComponent<Renderer>().material = material[0];
             puzzle2.GetComponent<Renderer>().material = material[1];
@@ -58,7 +51,7 @@ public class PUZZLE : MonoBehaviour
             puzzle4.GetComponent<Renderer>().material = material[3];
         }
         // Changing the material of the target into the "Third puzzle"
-        if (puzzle == 3 && isRunning)
+        if (SetPuzzle.puzzle == 3 && isRunning)
         {
             puzzle1.GetComponent<Renderer>().material = material[4];
             puzzle2.GetComponent<Renderer>().material = material[5];
@@ -117,6 +110,16 @@ public class PUZZLE : MonoBehaviour
         }
 
         
+    }
+
+
+    public void ResetGame()
+    {
+        collision_p1_2.snapped = false;
+        collision_p1_3.snapped = false;
+        collision_p2_4.snapped = false;
+        collision_p3_4.snapped = false;
+        MyDefaultTrackableEventHandler.countNum = 0;
     }
 
     // Display Countdown timer
