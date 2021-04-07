@@ -12,7 +12,7 @@ public class collision_p1_3 : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.name == "P_1_2_Collision")
+        if (col.gameObject.name == "P_1_3_Collision")
         {
             snapped = true;
         }
@@ -20,7 +20,7 @@ public class collision_p1_3 : MonoBehaviour
 
     void OnTriggerExit(Collider col)
     {
-        if (col.gameObject.name == "P_1_2_Collision")
+        if (col.gameObject.name == "P_1_3_Collision")
         {
             snapped = false;
         }
