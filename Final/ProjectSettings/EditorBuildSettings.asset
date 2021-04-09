@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game.unity
     guid: 95876f498ed7dc540add9b5c30e8b37a
   - enabled: 1
+    path: Assets/Scenes/ShapesInstructions.unity
+    guid: 09450d3806b515c478c02f341dc21d24
+  - enabled: 1
     path: Assets/Scenes/Shapes.unity
     guid: c0a1e163256ce5f4aafdc944b826861a
   - enabled: 1

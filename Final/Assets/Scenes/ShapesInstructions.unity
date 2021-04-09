@@ -175,8 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpdateScene: {fileID: 163920197}
-  sceneName: Game
-  previus: Instructions
+  sceneName: Shapes
 --- !u!114 &163920197
 MonoBehaviour:
   m_ObjectHideFlags: 0
