@@ -11,17 +11,26 @@ public class ShapesGame : MonoBehaviour
 {
     public int state = 0;
 
+    [Header("Virtual Buttons")]
     public GameObject vb_triangle;
     public GameObject vb_square;
     public GameObject vb_circle;
     public GameObject vb_pentagon;
 
+    [Header("Good Job Audio")]
+    public AudioSource audioData;
+
+    [Header("Select shape Text")]
     public Text select_text;
 
     private bool triangle_pressed = false;
     private bool square_pressed = false;
     private bool circle_pressed = false;
     private bool pentagon_pressed = false;
+
+    private bool ready = true;
+    private float timeRemaining = 3;
+    private bool timer = false;
 
     void Start()
     {
@@ -89,35 +98,78 @@ public class ShapesGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (state)
+        if (ready)
         {
-            case 0: // Triangle
-                select_text.text = "Select the Triangle";
-                if (triangle_pressed)
-                    state = 1;
-                break;
+            switch (state)
+            {
+                case 0: // Triangle
+                    select_text.text = "Select the Triangle";
+                    if (triangle_pressed)
+                    {
+                        state = 1;
+                        audioData.Play();
+                        timer = true;
+                    }
 
-            case 1: // Square
-                select_text.text = "Select the Square";
-                if (square_pressed)
-                    state = 2;
-                break;
+                    break;
 
-            case 2: // Circle
-                select_text.text = "Select the Circle";
-                if (circle_pressed)
-                    state = 3;
-                break;
+                case 1: // Square
+                    select_text.text = "Select the Square";
+                    if (square_pressed)
+                    {
+                        state = 2;
+                        audioData.Play();
+                        timer = true;
+                    }
+                    break;
 
-            case 3: // Pentagon
-                select_text.text = "Select the Pentagon";
-                if (pentagon_pressed)
-                    state = 4;
-                break;
+                case 2: // Circle
+                    select_text.text = "Select the Circle";
+                    if (circle_pressed)
+                    {
+                        state = 3;
+                        audioData.Play();
+                        timer = true;
+                    }
+                    break;
 
-            case 4: // Finish
-                SceneManager.LoadScene("Congradulations");
-                break;
+                case 3: // Pentagon
+                    select_text.text = "Select the Pentagon";
+                    if (pentagon_pressed)
+                    {
+                        state = 4;
+                        audioData.Play();
+                    }
+                    break;
+
+                case 4: // Finish
+                    SceneManager.LoadScene("Congradulations");
+                    break;
+            }
+        }
+
+        if (timer)
+        {
+            ready = false;
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                timer = false;
+            }
+        }
+        else
+        {
+            timeRemaining = 3;
+            ready = true;
         }
     }
+
+
+
 }
+
+
+
